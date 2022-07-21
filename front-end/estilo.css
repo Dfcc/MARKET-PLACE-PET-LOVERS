@@ -1,161 +1,16 @@
+@import "header.css";
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+
 }
 :root{
     --tema:rgb(0, 189, 145);
 }
- /*------ estilo barra de menu animada------ */
- .bars__menu{
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    position: fixed;
-    right: 30px;
-    top: 15px;
-    display: block;
-  }
-
-  .bars__menu span{
-   display: block;
-   width: 100%;
-   height: 2px;
-   background: rgb(0, 0, 0);
-   margin-top: 6px;
-   transition:  .3s;
-   transform-origin:0px 100% ;
-  }
-  .activeline1__bars-menu{
-    transform: rotate(45deg)
-    translate(-2px, 1px);
-  }
-  .activeline3__bars-menu{
-    transform: rotate(-45deg)
-    translate(-4px,2px);
-  }
-  .activeline2__bars-menu{
-      opacity: 0;
-      margin-left:-50px ;
-  }
-
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
-}
-.container2{
-    max-width: 1400px;
-    margin: 0 auto;
-}
-.glider-dot.active {
-    background: rgb(243, 221, 193);
-}
-.glider-dot {
-    display: block;
-    cursor: pointer;
-    /* color: rgb(186, 30, 30); */
-    border-radius: 999px;
-    background: rgb(238, 238, 238);
-    width: 12px;
-    height: 12px;
-    margin: 7px;
-
-}
-.menu-menu{
-    border: 1px solid rgba(255, 255, 255, 0);
-    position: fixed;
-    width: 50%;
-    max-width: 400px;
-    background-color: rgb(255, 255, 255);
-    height: 90vh;
-    margin-left: 200px;
-    right: -500px;
-    top: 65px;
-    border-radius: 7px;
-    padding: 10px;
-    transition: .3s;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-}
-.menu-v{
- right: 5px;
- transition: .2s;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ------- header --------- */
-
-
-
-.header{
-    height: 60px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    background-color:var(--tema);
-    width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 1500;
-
-
-}
-.cont-lupa{
-    height: 400px;
-    width: 200px;
-}
-
-.lupa{
-    position: fixed;
-    right: 80px;
-    top: 15px;
-    width: 30px;
-}
-.b{
-    border: 1px solid rgb(209, 209, 209);
-    border-radius: 20px;
-    width: 80%;
-    max-width: 500px;
-    height: 40px;
-  
-}
-.cont-lupa{
-    background-color: rgb(255, 255, 255);
-    position: fixed;
-    top: -70px; 
-    z-index: 1000;
-    width: 100%;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: .3s;
-}
-
-.b-v{
-   position: fixed;
-    top: 60px;
-    z-index: 1000;
-}
-.logo{
-    width: 40px;
-    position: fixed;
-    left: 20px;
-    top: 10px;
-    font-family: 'Great Vibes', cursive;
-}
-
-
 
 
 
@@ -202,26 +57,27 @@
     width: 100%;
     height: 40vh;
     top: 0;
+    background: linear-gradient(to top, #ffffff 0%, #cf151200 23%);
 }
 
 /* IMAGENES */
 .fade1{
     background-size: cover;
-    background-image: url("http://c.files.bbci.co.uk/48DD/production/_107435681_perro1.jpg");
+    background-image: linear-gradient(to top, #ffffff 0%, #cf151200 23%), url("http://c.files.bbci.co.uk/48DD/production/_107435681_perro1.jpg");
     background-position: center;
     background-repeat: no-repeat;
 
 }
 
 .fade2{
-     background-image: url("https://estaticos.muyinteresante.es/uploads/images/gallery/59bbb29c5bafe878503c9872/husky-siberiano-redes.jpg");
+    background: linear-gradient(to top, #ffffff 0%, #cf151200 23%), url("https://estaticos.muyinteresante.es/uploads/images/gallery/59bbb29c5bafe878503c9872/husky-siberiano-redes.jpg");
      background-position: top;
      background-size: cover;
      background-repeat: no-repeat;
     }
 
 .fade3{
-        background-image: url(" https://i0.wp.com/www.miscachorros.net/wp-content/uploads/2020/08/perros-mas-peque%C3%B1os-del-mundo.jpg?fit=825%2C474&ssl=1");
+       background-image: linear-gradient(to top, #ffffff 0%, #cf151200 23%), url(" https://i0.wp.com/www.miscachorros.net/wp-content/uploads/2020/08/perros-mas-peque%C3%B1os-del-mundo.jpg?fit=825%2C474&ssl=1");
         background-position: top;
         background-size: cover;
         background-repeat: no-repeat;
@@ -262,22 +118,100 @@
 
 
 .texto{
-    margin: 50px 10px 10px 10px; 
-   font-size: 17px;
+    width: 100%;
+   font-size: 18px;
     display: flex;
     flex-direction: column;
    font-weight: 500;
-   color: rgb(131, 131, 131);
-    
+   color: rgb(162, 162, 162);
+   line-height: 30px;
+   height: auto;
+   padding: 20px;
+   height: 250px;
+   /* text-align: justify; */
+   overflow: hidden;
+   /* border: 1px solid red; */
+   position: relative;
+   transition: .5s;
+   margin-top: 20px;
+   font-weight: 300;
+} .textoFondo{
+    height: auto;
+    transition: .5s;
+    padding-bottom: 80px;
+    /* border-bottom: 1px solid rgb(197, 197, 197); */
 }
 .titulo{
     margin-bottom: 20px;
     font-size: 25px;
     color: #444444;
-    
+    font-weight: 500;
+}
+.texto-oculto{
+    transition: .5s;
+    margin-top: 70px;
 }
 
-
+.texto-visible{
+    transition: .5s;
+    margin-top: 0px;
+}
+.texto-oculto li{
+    margin: 20px 10px;
+}
+.texto-oculto ul{
+    /* border: 1px solid red; */
+    padding: 10px;
+}
+.texto-oculto h1{
+    /* margin: 20px 0; */
+    font-weight: 500;
+    color: #444444;
+}
+.aa{
+    margin-top: 30px;
+    margin-bottom: 20px;
+   
+}
+.verMas{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-top: 30px;
+    position: absolute;
+    bottom: 0px;
+    right: 20px;
+} .leer-mas{
+    border: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 18px;
+    color: var(--tema);
+    padding: 3px 0;
+    border-bottom: 1px solid var(--tema);
+    background-color: rgba(255, 255, 255, 0);
+} .leer-mas::after{
+    content: "LEER MAS";
+} .leer-mas_volver::after{
+    margin: 20px;
+    content: "";
+}
+.leer-mas_volver{
+    position: absolute;
+   background-image:  url("img/volver.png");
+   background-size: 20px;
+   background-position: center;
+   height: 40px;
+   width: 40px;
+   border-radius: 50%;
+   border: 1px solid rgb(237, 237, 237);
+   bottom: 30px;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   /* border: 1px solid rgb(194, 194, 194); */
+   background-repeat: no-repeat;
+}
+      
 
 
 
@@ -306,17 +240,24 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    background-color: rgb(241, 241, 241);
-    padding: 20px 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    /* background-color: rgb(255, 255, 255); */
+    /* background-image: url("16.png"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:top;
+    padding: 40px 0;
+   padding-bottom: 20px;
+    border: 1px solid rgba(255, 0, 0, 0);
+   
 }
 .categoria{
     border-radius: 7px;
     width: 160px;
     height: 150px;
     margin: 10px;
-    background-color: rgb(0, 189, 145);
+    background-color: rgb(0, 192, 147);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
    display: flex;
    flex-direction: column;
@@ -332,4 +273,89 @@
     color: white;
     font-weight: 700;
     margin-top: 10px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.aa{
+ 
+    /* border: 1px solid rgb(0, 81, 255); */
+    position: relative;
+    width: 330px;
+    height: 200px;
+    overflow: hidden;
+
+}
+.im{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 1000px;
+    border: 1px solid red;
+    left: -100px;
+    top: -100px;
+ 
+}
+
+#persona{
+    margin-top: 100px;
+    width: 200px;
+    -webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/* .persona{
+    transform: scaleY(100px);
+} */
+@-webkit-keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-1000px);
+              transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+#paisaje{
+    margin-top: 100px;
+    width: 200px;
+    transform: translateX(2000px);
+	-webkit-animation: slide-in-r 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-r 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@-webkit-keyframes slide-in-r {
+    0% {
+      -webkit-transform: translateX(1000px);
+              transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+.paisaje{
+    transform: translateX(0px); 
 }
