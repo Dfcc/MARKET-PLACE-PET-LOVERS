@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="estilo.css">
 
 	<style>
@@ -55,9 +55,11 @@
 
 <section >
     <article class="texto " >
+        <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
           <h1 class="titulo">Nuestra Mision</h1>
           <p>En <span class="l">Lovely Pets</span> deseamos que cada dueño adoptante encuentre 
             la mascota ideal, contribuyendo de esta forma a evitar el abandono animal.</p>
+        </div>
            <div class="texto-oculto " >
             <div class="aa">
                 <svg class="im"viewBox="0 0 4785 2903" fill="none">
@@ -206,23 +208,39 @@
 
 
 <section class="categorias">
-    <div class="container-categorias">
-        <div class="categoria">
-              <img src="perro.png" alt="">
-              <p>Perros</p>
+    <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+        <div class="container-categorias">
+            <a target="_blank" href="Category.html?1"><div class="categoria">
+                     <img src="https://img.freepik.com/fotos-premium/primer-plano-perro-raza-mixta-jadeando_191971-7459.jpg?w=740" alt="">
+                     <!-- <p>Perros</p> -->
+             </div></a>
+             <a  target="_blank"  hre ="Category.html?2"> <div class="categoria">
+                     <img id="gato" src="img/gato1.jpg" alt="">
+                     <!-- <p>Gatos</p> -->
+             </div>  </a>
+             <a  target="_blank"  href="Category.html?3"><div class="categoria">
+                    <img src="img/roedor1.jpg" alt="">
+                    <!-- <p>Conejos</p> -->
+             </div> </a>
+             <a  target="_blank"  href=""><div class="categoria">
+                  <img src="https://imagenes.elpais.com/resizer/My7_yGsSDGhib6xyUoW35tHHKbw=/414x0/cloudfront-eu-central-1.images.arcpublishing.com/prisa/AMH2ADNVDVDZBOLV2UVWWV4I4E.jpg" alt="">
+                   <!-- <p>Todos</p> -->
+             </div></a>
         </div>
-        <div class="categoria">
-            <img src="gato.png" alt="">
-            <p>Gatos</p>
-      </div>
-      <div class="categoria">
-        <img src="conejo.png" alt="">
-        <p>Conejos</p>
-  </div>
-  <div class="categoria">
-    <img src="" alt="">
-    <p>Todos</p>
-</div>
+    </div>
+</section>
+
+
+<section class="seccion-condiciones">
+    <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+       <div class="condiciones">
+          <h1 class="h1-condiciones">Este sitio permite la conexión entre el adoptante y el anunciante.</h1>
+          <p class="p-condiciones">
+            El adoptante no paga por el servicio.
+            El anunciante dona por cada anuncio deseado. 
+            Los ingresos recaudados estarán destinados principalmente a organizaciones de ayuda a animales y una pequeña parte para los costes de operación del marketplace.
+          </p>
+       </div>
     </div>
 </section>
 
@@ -231,21 +249,14 @@
 
 
 
-
-<section class="tres">
-       <div>
-        <img src="" alt="">
-       </div>
-</section>
-
-
-
-
-
-
-
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <script src="js.js"></script>
+<script>
+    AOS.init({
+        duration:700
+    });
+  </script>
 </body>
 </html> 

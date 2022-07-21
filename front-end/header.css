@@ -73,11 +73,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+     
 }
 .menu-v{
  right: 5px;
  transition: .2s;
+ 
 }
 
 .item-menu{
