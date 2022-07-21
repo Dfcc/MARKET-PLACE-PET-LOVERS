@@ -1,4 +1,7 @@
+:root{
+--tema:rgb(0, 233, 175);
 
+}
  /*------ estilo barra de menu animada------ */
  .bars__menu{
     width: 30px;
@@ -174,25 +177,32 @@
     height: auto;
     display: flex;
     align-items: center;
-  
+    justify-content: center;
+   border:1px solid red;
     position: fixed;
-    top: 10px;
-    left: 15px;
+    
+    /* top: 10px;
+    left: 15px; */
 }
 .logo{
     width: 30px;
     /* position: fixed; */
-    left: 20px;
-    top: 14px;
+    /* left: 20px;
+    top: 14px; */
     font-family: 'Great Vibes', cursive;
 }
 .p-logo{
     font-family: 'Teko', sans-serif;
-    font-size:30px ;
+    font-size:20px ;
     /* position: fixed; */
     color: #444444;
     margin-left: 10px;
 }
+
+.logo p{
+margin-bottom: -1rem !important; 
+}
+
 .l{
     font-family: 'Teko', sans-serif;
     font-size: 25px;
