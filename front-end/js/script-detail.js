@@ -24,6 +24,15 @@ if(specie==="Perro"){
 }
 if(specie==="?Gato"){
    fetch(`http://localhost:3000/cats/${id}`)
+<<<<<<< HEAD
+=======
+  .then(response => response.json())
+  .then(data => createPet(data));
+     
+}
+if(specie==="edor)"){
+   fetch(`http://localhost:3000/roedores/${id}`)
+>>>>>>> 2008ba3cb086269440773f619fe3c47fd65883f8
   .then(response => response.json())
   .then(data => createPet(data));
      
@@ -34,10 +43,8 @@ function createPet(data){
     first()
     return pet;
 }
-petName.innerHTML += `${pet.Name}`+ "hola";
-petType.innerHTML += pet.Especie;
 
-const initPage= first();
+
 function first(){
     insertname();
     insertRace();

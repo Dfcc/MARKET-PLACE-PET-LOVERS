@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
         petsUrl = "http://localhost:3000/dogs";
       }
       if(id==="2"){
-       petsUrl = `http://localhost:3000/cats`;
+       petsUrl = "http://localhost:3000/cats";
       }
       if(id==="3"){
         petsUrl = `http://localhost:3000/roedores`;
@@ -50,12 +50,15 @@ document.addEventListener('DOMContentLoaded', function() {
        
         allPets = petData  //empty array is now assigned to the bookData
        petContainer.innerHTML += `
-        <div id=pet-${pet.id}>
+       
+       <div id=pet-${pet.id}>
+       <a href="detail.html?${pet.Especie}${pet.id}"> 
           <h2>${pet.Name}</h2>
           <h4>Especie: ${pet.Especie}</h4>
           <img src="${pet.img}" width="333" height="500">
           <p>${pet.Raza}</p>
           <p>${pet.Lugar}</p>
+<<<<<<< HEAD
           <a href="detail.html?${pet.Especie}${pet.id}">
           <button> Detalle</button></a>
           <button data-id=${pet.id} id="delete-${pet.id}" data-action="delete">Delete</button> 
@@ -63,7 +66,14 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
         <div id=edit-pet-${pet.id}>
        
+=======
+          <button> Detalle</button></a>
+        </div>
+        <div id=edit-pet-${pet.id}>
+        </a>
+>>>>>>> 2008ba3cb086269440773f619fe3c47fd65883f8
         </div>`
+        
       }))
       
     
