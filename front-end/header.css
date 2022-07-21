@@ -121,15 +121,17 @@
 /* ------- header --------- */
 
 
-
 .header{
     height: 60px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     background-color:var(--tema);
     width: 100%;
     position: fixed;
+    left: 0;
     top: 0;
     z-index: 1500;
+   
+    margin: 0 auto;
 
 
 }
@@ -199,3 +201,5 @@
     font-size: 25px;
     color: rgb(141, 141, 141);
 }
+
+
