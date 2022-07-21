@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const petContainer = document.querySelector('#card-template') //Read
     const petForm = document.querySelector('#book-form') //Create
     
-    const petsURL = `http://localhost:3000/cats`
+    const petsURL = `http://localhost:3000/`
     let pets = [] //storing book data
     
     //READ
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
        petContainer.innerHTML += `
         <div id=pet-${pet.id}>
           <h2>${pet.Name}</h2>
-          <h4>Author: ${pet.Especie}</h4>
+          <h4>Especie: ${pet.Especie}</h4>
           <img src="${pet.img}" width="333" height="500">
           <p>${pet.Raza}</p>
           <p>${pet.Lugar}</p>
