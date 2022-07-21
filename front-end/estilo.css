@@ -50,38 +50,19 @@
     height: auto;
     position: relative;
     overflow: hidden;
-    z-index: 900;
+    z-index: 1100;
+
 }
 
 .mislider{
     width: 100%;
     height: 40vh;
     top: 0;
-    background: linear-gradient(to top, #ffffff 0%, #cf151200 23%);
+    
+    
 }
 
-/* IMAGENES */
-.fade1{
-    background-size: cover;
-    background-image: linear-gradient(to top, #ffffff 0%, #cf151200 23%), url("http://c.files.bbci.co.uk/48DD/production/_107435681_perro1.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
 
-}
-
-.fade2{
-    background: linear-gradient(to top, #ffffff 0%, #cf151200 23%), url("https://estaticos.muyinteresante.es/uploads/images/gallery/59bbb29c5bafe878503c9872/husky-siberiano-redes.jpg");
-     background-position: top;
-     background-size: cover;
-     background-repeat: no-repeat;
-    }
-
-.fade3{
-       background-image: linear-gradient(to top, #ffffff 0%, #cf151200 23%), url(" https://i0.wp.com/www.miscachorros.net/wp-content/uploads/2020/08/perros-mas-peque%C3%B1os-del-mundo.jpg?fit=825%2C474&ssl=1");
-        background-position: top;
-        background-size: cover;
-        background-repeat: no-repeat;
-       }
 
 
 .direcciones{
@@ -93,18 +74,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    top: .2s;
+    z-index: 1300;
 }
 
 
 .fade{
-    animation:fade .5s ;
-
+    animation:fade .5s forwards;
+    margin-bottom: 50px;
+     opacity: 0;
 }
 
 @keyframes fade {
-  0% {opacity: .4;}
+  0% {opacity: .5;}
   100%{opacity: 1;}
+  
 }
 
 
@@ -123,7 +107,7 @@
     display: flex;
     flex-direction: column;
    font-weight: 500;
-   color: rgb(162, 162, 162);
+   color: rgb(133, 133, 133);
    line-height: 30px;
    height: auto;
    padding: 20px;
@@ -162,6 +146,7 @@
 .texto-oculto ul{
     /* border: 1px solid red; */
     padding: 10px;
+ 
 }
 .texto-oculto h1{
     /* margin: 20px 0; */

@@ -1,17 +1,6 @@
-let array = [
-     {"imagen":"img/i1.jpg"},
-     {"imagen":"img/i2.jpg"},
-     {"imagen":"img/i3.jpg"},
-     {"imagen":"img/i4.jpg"},
-     {"imagen":"img/i5.jpg"},
-     {"imagen":"img/i6.jpg"},
-     {"imagen":"img/i7.jpg"},
-];
 
 
-
-
-
+///////////////////////////////  HEADER ///////////////////////////////////////
 //animacion de la barra de menu
 document.querySelector(".bars__menu").addEventListener("click", animateBars );
 let line1__bars = document.querySelector(".line1__bars-menu");
@@ -34,14 +23,14 @@ const item = document.querySelector(".menu-menu")
 botonBar.addEventListener("click" , () => {
     item.classList.toggle("menu-v")
 })
-
+//------------------------------------------------------------------------------------
 
 
 ver.addEventListener("click" , () => {
     tOculto.classList.toggle("texto-visible");
     itemTexto.classList.toggle("textoFondo");
     btnsubir.classList.toggle("leer-mas_volver");
-    persona.style.animation = "mover 1s" ;
+    // persona.style.animation = "mover 1s" ;
 })
 
 
@@ -53,22 +42,39 @@ ver.addEventListener("click" , () => {
 
 
 
-
-
 // eslaider
-let slaider = document.querySelector(".slide-contenedor")
-let c = 0;
-array.forEach(img => {
-      let div1 = document.createElement("div");
-      div1.setAttribute("class","mislider fade fade");
-      div1.style.background = "url("+img.imagen+")";
+function obtenerDatos() {
+    const data = new XMLHttpRequest();
+    data.open('GET','slaider.json',true);
+
+    data.send();
+
+    data.onreadystatechange = function(){
+        if(this.readyState == 4 && this.status == 200){
+            // console.log(this.responseText)
+            
+             let datos = JSON.parse(this.responseText);
+             let slaider = document.querySelector(".slide-contenedor")
+             for (let item of datos) {
+                let div1 = document.createElement("div");
+      div1.setAttribute("class","mislider fade");
+      div1.style.backgroundImage = "linear-gradient(to top, #ffffff 0%, #cf151200 23%), url("+item.imagen+") ";
       div1.style.backgroundPosition = "center";
       div1.style.backgroundSize = "cover";
       div1.style.backgroundRepeat = "no-repeat";
-
+     
       slaider.appendChild(div1);
-      c++;
-});
+                console.log(item.imagen)
+             }
+    }
+
+
+
+
+    }
+}
+obtenerDatos()
+
 
 
 
