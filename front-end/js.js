@@ -1,12 +1,27 @@
+let array = [
+     {"imagen":"img/i1.jpg"},
+     {"imagen":"img/i2.jpg"},
+     {"imagen":"img/i3.jpg"},
+     {"imagen":"img/i4.jpg"},
+     {"imagen":"img/i5.jpg"},
+     {"imagen":"img/i6.jpg"},
+     {"imagen":"img/i7.jpg"},
+];
+
+
+
+
 
 //animacion de la barra de menu
 document.querySelector(".bars__menu").addEventListener("click", animateBars );
 let line1__bars = document.querySelector(".line1__bars-menu");
 let line2__bars = document.querySelector(".line2__bars-menu");
 let line3__bars = document.querySelector(".line3__bars-menu");
-// let lupa = document.querySelector(".lupa");
-// let itemBuscador = document.querySelector(".cont-lupa");
-
+let tOculto = document.querySelector(".texto-oculto");
+let ver = document.querySelector(".verMas");
+let itemTexto = document.querySelector(".texto");
+let btnsubir = document.querySelector(".leer-mas");
+let persona = document.getElementById("persona");
 function animateBars(){
     line1__bars.classList.toggle("activeline1__bars-menu")
     line2__bars.classList.toggle("activeline2__bars-menu")
@@ -21,9 +36,13 @@ botonBar.addEventListener("click" , () => {
 })
 
 
-// lupa.addEventListener("click" , () => {
-//     itemBuscador.classList.toggle("b-v");
-// })
+
+ver.addEventListener("click" , () => {
+    tOculto.classList.toggle("texto-visible");
+    itemTexto.classList.toggle("textoFondo");
+    btnsubir.classList.toggle("leer-mas_volver");
+    persona.style.animation = "mover 1s" ;
+})
 
 
 
@@ -37,6 +56,26 @@ botonBar.addEventListener("click" , () => {
 
 
 // eslaider
+let slaider = document.querySelector(".slide-contenedor")
+let c = 0;
+array.forEach(img => {
+      let div1 = document.createElement("div");
+      div1.setAttribute("class","mislider fade fade");
+      div1.style.background = "url("+img.imagen+")";
+      div1.style.backgroundPosition = "center";
+      div1.style.backgroundSize = "cover";
+      div1.style.backgroundRepeat = "no-repeat";
+
+      slaider.appendChild(div1);
+      c++;
+});
+
+
+
+
+
+
+
 
 
 let indice = 1
