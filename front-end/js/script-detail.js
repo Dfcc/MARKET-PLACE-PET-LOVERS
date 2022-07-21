@@ -15,19 +15,23 @@ function getSpecie(url){
 }
 console.log(specie);
 
-if( id === "2"){
-    console.log("eres un crack")
-}
-if(specie==="perro"){
-   fetch(`http://localhost:3000/dogs/3`)
+
+if(specie==="Perro"){
+   fetch(`http://localhost:3000/dogs/${id}`)
   .then(response => response.json())
   .then(data => createPet(data));
-    
-    
+     
+}
+if(specie==="?Gato"){
+   fetch(`http://localhost:3000/cats/3`)
+  .then(response => response.json())
+  .then(data => createPet(data));
+     
 }
 let pet= new Object;
 function createPet(data){
     pet=data
+    first()
     return pet;
 }
 petName.innerHTML += `${pet.Name}`+ "hola";
