@@ -62,6 +62,7 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
         <div id=edit-pet-${pet.id}>
         </div>`
+<<<<<<< HEAD
       }),
       function getDetail (){
         fetch(`${petSingleUrl}`)
@@ -86,6 +87,9 @@ document.addEventListener('DOMContentLoaded', function() {
    `
 )} 
       )
+=======
+      }))
+>>>>>>> ed25f3297497b33bea79fb154f321f80e5a1c63d
       
     
 
