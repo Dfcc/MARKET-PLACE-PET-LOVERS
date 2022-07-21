@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 p{
     color: #282C87;
     font-family: sans-serif;
@@ -10,3 +11,63 @@ p{
     height: 30px;
 
 }
+=======
+@import "../header.css";
+*{
+padding: 0;
+margin: 0;
+}
+
+.footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    color:#0a0d49;
+    background-color: #A7CDAE;
+    padding: 20px 20px;
+}
+
+.container-footer{
+    height: 15%;
+}
+
+.contenedor-iconos{
+    display: flex;
+    justify-content: left;
+}
+
+.navbar-brand{
+    padding: 6px
+}
+
+a{
+    margin: 0;
+    padding: 0;
+}
+
+.footer-pos{
+    display: flex;
+    justify-content: center;
+}
+
+.navbar{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: right;
+      font-size: 16px;
+      padding: 2px;
+      text-decoration: none;
+       
+}
+
+.navbar a{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+>>>>>>> b6c5f8145366c16da775b3657c053f2378bd4e2b
