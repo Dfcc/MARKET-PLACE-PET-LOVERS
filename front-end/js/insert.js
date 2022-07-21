@@ -1,3 +1,10 @@
+const url =window.location.href;
+const id=lastLetter(url);
+function lastLetter(string){
+    return string.substr(-1);
+}
+console.log(id);
+
 //Loading the DOM and the ‘R’ of CRUD
 //In order to get started, we need to make sure DOM has fully loaded 
 //before anything else occurs add an event listener to the DOM:
@@ -9,10 +16,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
     //cache DOM elements we want to use
     const petContainer = document.querySelector('#card-template') //Read
+    const petDetail = document.querySelector('#card-detail') //Read
     const petForm = document.querySelector('#book-form') //Create
     
-    const petsURL = `http://localhost:3000/`
+    let petsUrl ="";
+    const petSingleUrl=`http://localhost:3000/cats/{$id}`
     let pets = [] //storing book data
+
+    if(id==="1"){
+        petsUrl = "http://localhost:3000/dogs";
+      }
+      if(id==="2"){
+       petsUrl = `http://localhost:3000/cats`;
+      }
+
     
     //READ
 /*     "id": 1,
@@ -24,9 +41,10 @@ document.addEventListener('DOMContentLoaded', function() {
     "img": "https://www.elpais" */
     //fetching data and iterating data into UI
     //run forEach on bookData, which will run a function on each individual book in bookData
-    fetch(`${petsURL}`)
+    fetch(`${petsUrl}`)
       .then( response => response.json() ) //read and parse the data using json()
       .then( petData => petData.forEach(function(pet) {
+       
         allPets = petData  //empty array is now assigned to the bookData
        petContainer.innerHTML += `
         <div id=pet-${pet.id}>
@@ -35,13 +53,40 @@ document.addEventListener('DOMContentLoaded', function() {
           <img src="${pet.img}" width="333" height="500">
           <p>${pet.Raza}</p>
           <p>${pet.Lugar}</p>
-          <button data-id=${pet.id} id="edit-${pet.id}" data-action="edit">Edit</button>
+          <a href="detail.html?${pet.id}">
+          <button> Detalle</button></a>
           <button data-id=${pet.id} id="delete-${pet.id}" data-action="delete">Delete</button>
         </div>
         <div id=edit-pet-${pet.id}>
         </div>`
-      })) 
-  
+      }),
+      function getDetail (){
+        fetch(`${petSingleUrl}+/${pet.id}`)
+        .then( response => response.json(), 
+         petDetail.innerHTML += `
+         <article class="card" id="card-detail">
+         <div class="card" > 
+         <div id=pet-${response.id}>
+             <output id="img-output"> <img src="${response.img}" width="333" height="500"></output>
+             <div class="card-body">
+                 <h1>Ficha técnica del animal</h1>
+                 <output id="petName">Nombre :${response.Name} </output></br>
+                 <output id="petType">Especie : ${response.Especie} </output></br>
+                 <output id="petRace">Raza :${response.Raza} </output></br>
+                 <output id="petAge">Edad : ${response.Edad}</output></br>
+                 <output id="petPlace">Lugar :${response.Lugar} </output></br> 
+             </div>
+         </div>
+        </article>
+  <button data-id=${response.id} id="edit-${response.id}" data-action="edit"><a href= detail.html>adoptar</a></button>
+           <button data-id=${response.id} id="delete-${response.id}" data-action="delete">Delete</button>
+   `
+)} 
+      )
+      
+    
+
+   })
 
      //CREATE
      //This is listening for an event called ‘submit’ on bookForm
@@ -164,4 +209,4 @@ document.addEventListener('DOMContentLoaded', function() {
   
     }) // end of eventListener for editing and deleting a book */
   
-  })
+ 
