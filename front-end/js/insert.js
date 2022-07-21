@@ -50,18 +50,22 @@ document.addEventListener('DOMContentLoaded', function() {
        
         allPets = petData  //empty array is now assigned to the bookData
        petContainer.innerHTML += `
-       
-       <div id=pet-${pet.id}>
        <a href="detail.html?${pet.Especie}${pet.id}"> 
-          <h2>${pet.Name}</h2>
+       <div id=pet-${pet.id}>
+       <h2>${pet.Name}</h2>
           <h4>Especie: ${pet.Especie}</h4>
           <img src="${pet.img}" width="333" height="500">
+          
           <p>${pet.Raza}</p>
           <p>${pet.Lugar}</p>
+          <a onclick="changeColor()"><img class="fav"src="./img/favorito.png" width="90"/></a>
+          <a href="detail.html?${pet.Especie}${pet.id}">
           <button> Detalle</button></a>
-        </div>
+          <button data-id=${pet.id} id="delete-${pet.id}" data-action="delete">Delete</button> 
+          
+        </div></a>
         <div id=edit-pet-${pet.id}>
-        </a>
+       
         </div>`
         
       }))
