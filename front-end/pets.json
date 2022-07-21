@@ -1,0 +1,143 @@
+{
+  "cats": [
+      {
+          "id": 1,
+          " Name": "Misifu",
+          " Especie": "Gato",
+          " Raza": "Persa",
+          "Edad": 3,
+          "Lugar": "Madrid",
+          "img": "./img/persa.jpg"
+      },
+      {
+          " id": 2,
+          " Name": "Flash",
+          "Especie": "Gato",
+          "Raza": "Munchkin",
+          " Edad": 3,
+          "Lugar": "Barcelona",
+          "img": "./img/munchkin.jpg"
+      },
+      {
+          "id": 3,
+          "Name": "Odin",
+          "Especie": "Gato",
+          "Raza": "Europeo",
+          " Edad": 3,
+          " Lugar": "Asturias",
+          " img": "./img/comun-europeo.jpg"
+      },
+      {
+          "id": 4,
+          "Name": "Max",
+          "Especie": "Gato",
+          " Raza": "Siames",
+          " Edad": 3,
+          " Lugar": "Galicia",
+          "img": "./img/siamés-gris.jpg"
+      },
+      {
+          " id": 5,
+          "Name": "Coco",
+          "Especie": "Gato",
+          "Raza": "Sagrado de birmania",
+          " Edad": 3,
+          " Lugar": "Asturias",
+          " img": "./img/sagrado-de-birmania.jpg"
+      }
+  ],
+  "dogs": [
+      {
+          "id": 1,
+          "Name": "Rocky",
+          "Especie": "Perro",
+          "Raza": " Pug Carlino",
+          "Edad": "1 año",
+          "Lugar": "Sevilla",
+          "img": "./img/raza-pug-carlino.jpg"
+      },
+      {
+          "id": 2,
+          " Name": "Mico",
+          " Especie": "Perro",
+          "Raza": "Husky Siberiano",
+          "Edad": "3 meses",
+          "Lugar": "Madrid",
+          "img": "./img/cachorro-de-husky.jpg"
+      },
+      {
+          "id": 3,
+          "Name": "Nina",
+          " Especie": "Perro",
+          " Raza": "Cotón de Tuléar",
+          "Edad": "5 meses",
+          "Lugar": "Bilbao",
+          "img": "./img/cotón-de-tuléar-bebé.jpg"
+      },
+      {
+          "id": 4,
+          "Name": "Toby",
+          "Especie": "Perro",
+          " Raza": "Bulldog francés",
+          "Edad": "1 año",
+          "Lugar": "Burgos",
+          " img": "./img/bulldog-francés-blue.jpg"
+      },
+      {
+          "id": 5,
+          "Name": "Linda",
+          " Especie": "Perro",
+          " Raza": "Setter-gordon",
+          " Edad": "3 año",
+          " Lugar": "Pontevedra",
+          " img": "./img/Setter-gordon.jpg"
+      }
+  ],
+  "roedores": [
+      {
+          "id": 1,
+          "Nombre": "Coquito",
+          "Especie": "Hámster(Roedor)",
+          "Raza": "Chino",
+          "Edad": "6 meses",
+          "Lugar": "Valencia",
+          "img": "https://cdn.pixabay.com/photo/2017/07/01/16/59/hamster-2462048_960_720.jpg"
+      },
+      {
+          "id": 2,
+          "Nombre": "Galleta",
+          "Especie": "Cobaya(Roedor)",
+          "Raza": "Sheltie",
+          "Edad": "1 Año",
+          "Lugar": "Huesca",
+          "img": "https://cdn.pixabay.com/photo/2017/09/15/16/28/the-guinea-pig-2752716_960_720.jpg"
+      },
+      {
+          "id": 3,
+          "Nombre": "Miel",
+          "Especie": "Conejo(Roedor)",
+          "Raza": "Toy",
+          "Edad": "3 Años",
+          "Lugar": "Barcelona",
+          "img": "https://cdn.pixabay.com/photo/2014/02/19/17/51/dwarf-rabbit-270000_960_720.jpg"
+      },
+      {
+          "id": 4,
+          "Nombre": "Lollipop",
+          "Especie": "Chinchilla(Roedor)",
+          "Raza": "Blanca",
+          "Edad": "2 Años",
+          "Lugar": "Zaragoza",
+          "img": "https://cdn.pixabay.com/photo/2016/12/10/17/52/chinchilla-1897815_960_720.jpg"
+      },
+      {
+          "id": 5,
+          "Nombre": "Pompón",
+          "Especie": "Conejo(Roedor)",
+          "Raza": "conejo",
+          "Edad": "2 Años",
+          "Lugar": "Zaragoza",
+          "img": "https://cdn.pixabay.com/photo/2016/12/10/17/52/chinchilla-1897815_960_720.jpg"
+      }
+  ]
+}

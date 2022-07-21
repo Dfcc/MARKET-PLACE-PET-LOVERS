@@ -3,7 +3,7 @@
 *{
     padding: 0;
     margin: 0;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
 
@@ -13,10 +13,7 @@
 }
 
 
-body{
-    overflow: auto;
-    overflow-y: scroll;
-}
+
 
 
 
@@ -27,7 +24,7 @@ body{
 
 
 .seccion-uno{
-    /* position: relative; */
+    position: relative;
     margin-top: 60px;
 }
 
@@ -51,7 +48,7 @@ body{
     height: auto;
     position: relative;
     overflow: hidden;
-    z-index: 0;
+    z-index: 1100;
 
 }
 
@@ -76,7 +73,7 @@ body{
     justify-content: space-between;
     align-items: center;
     top: .2s;
-    z-index: 900;
+    z-index: 1300;
 }
 
 
@@ -103,7 +100,7 @@ body{
 
 
 .texto{
-    width: 90%;
+    width: 100%;
    font-size: 18px;
     display: flex;
     flex-direction: column;
@@ -163,12 +160,12 @@ body{
 .verMas{
     width: 100%;
     display: flex;
-    justify-content: left;
+    justify-content: right;
     align-items: center;
     margin-top: 30px;
     position: absolute;
     bottom: 0px;
-    left:  20px;
+    right: 20px;
 } .leer-mas{
     border: none;
     font-weight: 600;
@@ -224,7 +221,7 @@ body{
 
 .container-categorias{
     position: relative;
-    /* z-index: 300; */
+    z-index: 300;
     flex-wrap: wrap;
     width: 100%;
     display: flex;
@@ -240,7 +237,7 @@ body{
     background-position:center;
     background-image: url("f.png");
     text-decoration: none;
-    
+    overflow: hidden;
     /* border: 1px solid red; */
         /* height: 100vh; */
 } .container-categorias a{
@@ -269,7 +266,7 @@ body{
 }
 #gato{
     width: 70%;
-    height: 70%;
+    height: 70%px;
     object-position: bottom;
 }
 .categoria p{
@@ -302,10 +299,10 @@ body{
 .aa{
  
     /* border: 1px solid rgb(0, 81, 255); */
+    position: relative;
     width: 330px;
     height: 200px;
-   overflow: hidden;
-   position: relative;
+    overflow: hidden;
 
 }
 .im{
@@ -316,7 +313,6 @@ body{
     /* border: 1px solid red; */
     left: -100px;
     top: -100px;
-    overflow: hidden;
  
 }
 
@@ -362,6 +358,9 @@ body{
     }
   }
 
+.paisaje{
+    transform: translateX(0px); 
+}
 
 
 
@@ -378,14 +377,13 @@ condiciones */
 
 
 .seccion-condiciones{
-    width: 90%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 50px;
     padding: 20px;
     margin-bottom: 50px;
-    /* border: 1px solid red; */
 }
 .condiciones{
     width: 100%;
@@ -407,89 +405,3 @@ condiciones */
   color: rgb(124, 124, 124);
   font-weight: 400;
 }
-
-
-
-
-
-
-
-
-
-
-
-@media (min-width:800px){
-
-
-
-
-body{
-    margin-top: 60px;
-}
-
-
-.body1{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    /* border: 10px solid black; */
-    margin-top: 120px;
-    position: relative;
-    z-index: 0;
-    flex-direction: row-reverse;
-}
-
-.container-categorias{
-    width: 100%;
-    margin: 0;
-}
-.categorias{
-    width: 45%;
-    /* border: 1px solid red; */
-    margin: 0;
-}
-.categoria{
-    width: 200px;
-    height: 200px;
-}
-
-
-
-
-
-
-
-
-
-
-
-.s1{
-    width: 35%;
-    /* border: 1px solid red; */
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-.texto{
-    /* border: 1px solid red; */
- width: 90%;
- display: flex;
- align-items: flex-start;
- justify-content: right;
- align-items: top;
- transition: .5s;
- /* justify-content: center; */
-}
-}
-
-
-
-
-
-
-/* 
-.seccion-condiciones{
-    width: 50%;
-    display: inline-block;
-    border: 1px solid red;
-} */
