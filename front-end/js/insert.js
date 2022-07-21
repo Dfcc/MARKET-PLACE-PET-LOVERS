@@ -50,9 +50,9 @@ document.addEventListener('DOMContentLoaded', function() {
        
         allPets = petData  //empty array is now assigned to the bookData
        petContainer.innerHTML += `
-       
+       <div>
        <div id=pet-${pet.id}>
-       <a href="detail.html?${pet.Especie}${pet.id}"> 
+          <a href="detail.html?${pet.Especie}${pet.id}"> 
           <h2>${pet.Name}</h2>
           <h4>Especie: ${pet.Especie}</h4>
           <img src="${pet.img}" width="333" height="500">
