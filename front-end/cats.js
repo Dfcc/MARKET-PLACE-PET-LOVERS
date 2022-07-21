@@ -54,6 +54,55 @@ const cats = [
         img: "./img/exoticos.jpg"
     },
 ];
+const dogs = [
+    {
+        id: 1,
+        Name: "Rocky",
+        Especie: "Perro",
+        Raza: " Pug Carlino",
+        Edad: "1 año",
+        Lugar: "Sevilla",
+        img: "./img/raza-pug-carlino.jpg"
+    }, 
+    {
+        id: 2,
+        Name: "Mico",
+        Especie: "Perro",
+        Raza: "Husky Siberiano",
+        Edad: "3 meses",
+        Lugar: "Madrid",
+        img: "./img/cachorro-de-husky.jpg"
+    },
+    {
+        id: 3,
+        Name: "Nina",
+        Especie: "Perro",
+        Raza: "Cotón de Tuléar",
+        Edad: "5 meses",
+        Lugar: "Bilbao",
+        img: "./img/cotón-de-tuléar-bebé.jpg"
+    },
+    {
+        id: 4,
+        Name: "Toby",
+        Especie: "Perro",
+        Raza: "Bulldog francés",
+        Edad: "1 año",
+        Lugar: "Burgos",
+        img: "./img/bulldog-francés-blue.jpg"
+    }, 
+    {
+        id: 5,
+        Name: "Linda",
+        Especie: "Perro",
+        Raza: "Setter-gordon",
+        Edad: "3 año",
+        Lugar: "Pontevedra",
+        img: "./img/Setter-gordon.jpg"
+    },
+    
+       
+];
 let card = document.getElementById("card-template");
 
 cats.map((x) => {
@@ -64,3 +113,4 @@ cats.map((x) => {
                 <p>${x.Edad}</p>
             </div>`;
 }); 
+
