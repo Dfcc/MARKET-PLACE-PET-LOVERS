@@ -1,3 +1,18 @@
+// const imgSlaider = [
+
+//     {"imagen":"img/i9.jpg"},
+//     {"imagen":"img/i1.jpg"},
+//     {"imagen":"img/i2.jpg"},
+//     {"imagen":"img/i3.jpg"},
+//     {"imagen":"img/i4.jpg"},
+//     {"imagen":"img/i5.jpg"},
+//     {"imagen":"img/i6.jpg"},
+//     {"imagen":"img/i7.jpg"},
+
+// ];
+
+
+
 const cats = [
     {
         id: 1,
