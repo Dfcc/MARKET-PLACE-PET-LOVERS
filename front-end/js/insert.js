@@ -62,34 +62,7 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
         <div id=edit-pet-${pet.id}>
         </div>`
-<<<<<<< HEAD
-      }),
-      function getDetail (){
-        fetch(`${petSingleUrl}`)
-        .then( response => response.json(), 
-         petDetail.innerHTML += `
-         <article class="card" id="card-detail">
-         <div class="card" > 
-         <div id=pet-${response.id}>
-             <output id="img-output"> <img src="${response.img}" width="333" height="500"></output>
-             <div class="card-body">
-                 <h1>Ficha técnica del animal</h1>
-                 <output id="petName">Nombre :${response.Name} </output></br>
-                 <output id="petType">Especie : ${response.Especie} </output></br>
-                 <output id="petRace">Raza :${response.Raza} </output></br>
-                 <output id="petAge">Edad : ${response.Edad}</output></br>
-                 <output id="petPlace">Lugar :${response.Lugar} </output></br> 
-             </div>
-         </div>
-        </article>
-  <button data-id=${response.id} id="edit-${response.id}" data-action="edit"><a href= detail.html>adoptar</a></button>
-           <button data-id=${response.id} id="delete-${response.id}" data-action="delete">Delete</button>
-   `
-)} 
-      )
-=======
       }))
->>>>>>> ed25f3297497b33bea79fb154f321f80e5a1c63d
       
     
 
