@@ -10,43 +10,43 @@ const cats = [
     },
     {
         id: 2,
-        Name: "Misifu",
+        Name: "Flash",
         Especie: "Gato",
         Raza: "Munchkin",
         Edad: 3,
-        Lugar: "",
+        Lugar: "Barcelona",
         img: "./img/munchkin.jpg"
     },
     {
         id: 3,
-        Name: "Misifu",
+        Name: "Odin",
         Especie: "Gato",
         Raza: "Europeo",
         Edad: 3,
-        Lugar: "Madrid",
+        Lugar: "Asturias",
         img: "./img/comun-europeo.jpg"
     },
     {
         id: 4,
-        Name: "Misifu",
+        Name: "Max",
         Especie: "Gato",
         Raza: "Siames",
         Edad: 3,
-        Lugar: "Madrid",
+        Lugar: "Galicia",
         img: "./img/siamés-gris.jpg"
     },
     {
         id: 5,
-        Name: "Misifu",
+        Name: "Coco",
         Especie: "Gato",
         Raza: "Sagrado de birmania",
         Edad: 3,
-        Lugar: "Madrid",
+        Lugar: "Asturias",
         img: "./img/sagrado-de-birmania.jpg"
     },
     {
         id: 6,
-        Name: "Misifu",
+        Name: "Ñoqui",
         Especie: "Gato",
         Raza: "Exotico",
         Edad: 3,
