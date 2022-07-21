@@ -23,7 +23,7 @@ if(specie==="Perro"){
      
 }
 if(specie==="?Gato"){
-   fetch(`http://localhost:3000/cats/3`)
+   fetch(`http://localhost:3000/cats/${id}`)
   .then(response => response.json())
   .then(data => createPet(data));
      

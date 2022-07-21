@@ -56,11 +56,13 @@ document.addEventListener('DOMContentLoaded', function() {
           <img src="${pet.img}" width="333" height="500">
           <p>${pet.Raza}</p>
           <p>${pet.Lugar}</p>
-          <a href="detail.html?${pet.id}">
+          <a href="detail.html?${pet.Especie}${pet.id}">
           <button> Detalle</button></a>
-          <button data-id=${pet.id} id="delete-${pet.id}" data-action="delete">Delete</button>
+          <button data-id=${pet.id} id="delete-${pet.id}" data-action="delete">Delete</button> 
+          <a onclick="changeColor()"><img src="./img/favorito.png"/></a>
         </div>
         <div id=edit-pet-${pet.id}>
+       
         </div>`
       }))
       
