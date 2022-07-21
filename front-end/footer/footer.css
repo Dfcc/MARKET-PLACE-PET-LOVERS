@@ -1,0 +1,10 @@
+@import "../header.css";
+
+.contenedor-iconos{
+    display: flex;
+}
+
+.color-container{
+    background-color: #A7CDAE;
+    color:#282C87;
+}
