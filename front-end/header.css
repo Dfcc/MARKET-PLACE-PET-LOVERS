@@ -175,21 +175,21 @@
 }
 .logotipo{
     width: auto;
-    height: auto;
+    height: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
-   border:1px solid red;
     position: fixed;
     
-    /* top: 10px;
-    left: 15px; */
+    top: 15px;
+    left: 15px;
 }
 .logo{
     width: 30px;
     /* position: fixed; */
     /* left: 20px;
     top: 14px; */
+    height: 30px;
     font-family: 'Great Vibes', cursive;
 }
 .p-logo{
