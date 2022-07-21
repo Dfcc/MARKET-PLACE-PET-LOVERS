@@ -21,8 +21,6 @@
 
 
 
-
-
 /*------ slider -------*/
 
 
@@ -51,38 +49,19 @@
     height: auto;
     position: relative;
     overflow: hidden;
-    z-index: 900;
+    z-index: 1100;
+
 }
 
 .mislider{
     width: 100%;
     height: 40vh;
     top: 0;
-    background: linear-gradient(to top, #ffffff 0%, #cf151200 23%);
+    
+    
 }
 
-/* IMAGENES */
-.fade1{
-    background-size: cover;
-    background-image: linear-gradient(to top, #ffffff 0%, #cf151200 23%), url("http://c.files.bbci.co.uk/48DD/production/_107435681_perro1.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
 
-}
-
-.fade2{
-    background: linear-gradient(to top, #ffffff 0%, #cf151200 23%), url("https://estaticos.muyinteresante.es/uploads/images/gallery/59bbb29c5bafe878503c9872/husky-siberiano-redes.jpg");
-     background-position: top;
-     background-size: cover;
-     background-repeat: no-repeat;
-    }
-
-.fade3{
-       background-image: linear-gradient(to top, #ffffff 0%, #cf151200 23%), url(" https://i0.wp.com/www.miscachorros.net/wp-content/uploads/2020/08/perros-mas-peque%C3%B1os-del-mundo.jpg?fit=825%2C474&ssl=1");
-        background-position: top;
-        background-size: cover;
-        background-repeat: no-repeat;
-       }
 
 
 .direcciones{
@@ -94,18 +73,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    top: .2s;
+    z-index: 1300;
 }
 
 
 .fade{
-    animation:fade .5s ;
-
+    animation:fade .5s forwards;
+    margin-bottom: 50px;
+     opacity: 0;
 }
 
 @keyframes fade {
-  0% {opacity: .4;}
+  0% {opacity: .5;}
   100%{opacity: 1;}
+  
 }
 
 
@@ -124,7 +106,7 @@
     display: flex;
     flex-direction: column;
    font-weight: 500;
-   color: rgb(162, 162, 162);
+   color: rgb(133, 133, 133);
    line-height: 30px;
    height: auto;
    padding: 20px;
@@ -136,6 +118,7 @@
    transition: .5s;
    margin-top: 20px;
    font-weight: 300;
+   
 } .textoFondo{
     height: auto;
     transition: .5s;
@@ -163,6 +146,7 @@
 .texto-oculto ul{
     /* border: 1px solid red; */
     padding: 10px;
+ 
 }
 .texto-oculto h1{
     /* margin: 20px 0; */
@@ -237,43 +221,61 @@
 
 
 .container-categorias{
+    position: relative;
+    z-index: 300;
     flex-wrap: wrap;
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 50px;
     margin-bottom: 30px;
-    /* background-color: rgb(255, 255, 255); */
-    /* background-image: url("16.png"); */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position:top;
+    /* background-color: rgb(231, 231, 231); */
     padding: 40px 0;
-   padding-bottom: 20px;
+    padding-bottom: 20px;
     border: 1px solid rgba(255, 0, 0, 0);
-   
+    background-size: 460px;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-image: url("f.png");
+    text-decoration: none;
+    overflow: hidden;
+    /* border: 1px solid red; */
+        /* height: 100vh; */
+} .container-categorias a{
+    text-decoration: none;
 }
 .categoria{
-    border-radius: 7px;
+    border-radius:20px;
     width: 160px;
     height: 150px;
     margin: 10px;
-    background-color: rgb(0, 192, 147);
+    color:black;
+    /* background-image: url("perro1.png"); */
+    background-color: rgb(255, 255, 255);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
    display: flex;
    flex-direction: column;
    align-items: center;
+   overflow: hidden;
    justify-content: center;
 }
 .categoria img{
-    width: 90px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
-
+#gato{
+    width: 70%;
+    height: 70%px;
+    object-position: bottom;
+}
 .categoria p{
     font-size: 25px;
-    color: white;
+    color: rgb(66, 66, 66);
     font-weight: 700;
     margin-top: 10px;
+    font-weight: 500;
     
 }
 
@@ -309,7 +311,7 @@
     justify-content: center;
     position: absolute;
     width: 1000px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     left: -100px;
     top: -100px;
  
@@ -359,4 +361,48 @@
 
 .paisaje{
     transform: translateX(0px); 
+}
+
+
+
+
+
+
+
+
+
+
+/* 
+condiciones */
+
+
+
+.seccion-condiciones{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+.condiciones{
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+} 
+.h1-condiciones{
+    font-weight:500;
+    color: #2b2b2b;
+    margin-bottom: 30px;
+}
+
+.p-condiciones{
+  line-height: 28px;
+  font-size: 18px;
+  color: rgb(124, 124, 124);
+  font-weight: 400;
 }
