@@ -133,7 +133,7 @@
     position: fixed;
     top: 0;
     z-index: 1500;
-
+    
 
 }
 .cont-lupa{
@@ -179,9 +179,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
+<<<<<<< HEAD
     position: fixed;
     
     top: 15px;
+=======
+
+    position: fixed;
+    
+    top: 19px;
+>>>>>>> 806df3b8e2f7d0f39bd07d1e790a741248514681
     left: 15px;
 }
 .logo{
