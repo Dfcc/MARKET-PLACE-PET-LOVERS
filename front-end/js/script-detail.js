@@ -30,12 +30,6 @@ if(specie==="?Gato"){
   .then(data => createPet(data));
      
 }
-if(specie==="edor)"){
-   fetch(`http://localhost:3000/roedores/${id}`)
-  .then(response => response.json())
-  .then(data => createPet(data));
-     
-}
 let pet= new Object;
 function createPet(data){
     pet=data

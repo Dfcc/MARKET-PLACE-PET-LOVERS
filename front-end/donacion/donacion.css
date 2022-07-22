@@ -1,1 +1,55 @@
 @import "../header.css";
+.footer{
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    color:#0a0d49;
+    background-color: #6b7a6e5e;
+    margin-top: 1rem;
+
+    padding: 20px 20px;
+}
+
+.container-footer{
+    height: 15%;
+}
+
+.contenedor-iconos{
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-brand{
+    padding: 6px
+}
+#donate-button{
+    text-align: center;
+}
+
+a{
+    margin: 0;
+    padding: 0;
+}
+
+.footer-pos{
+    display: flex;
+    justify-content: center;
+}
+
+.navbar{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: right;
+      font-size: 16px;
+      padding: 2px;
+      text-decoration: none;
+       
+}
+
+.navbar a{
+    padding: 0;
+    margin: 0;
+}
