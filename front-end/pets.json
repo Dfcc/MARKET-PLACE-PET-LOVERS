@@ -58,8 +58,8 @@
         },
         {
             "id": 2,
-            " Name": "Mico",
-            " Especie": "Perro",
+            "Name": "Mico",
+            "Especie": "Perro",
             "Raza": "Husky Siberiano",
             "Edad": "3 meses",
             "Lugar": "Madrid",
@@ -68,8 +68,8 @@
         {
             "id": 3,
             "Name": "Nina",
-            " Especie": "Perro",
-            " Raza": "Cotón de Tuléar",
+            "Especie": "Perro",
+            "Raza": "Cotón de Tuléar",
             "Edad": "5 meses",
             "Lugar": "Bilbao",
             "img": "./img/coton-de-tulaar-bebe.jpg"
@@ -78,19 +78,19 @@
             "id": 4,
             "Name": "Toby",
             "Especie": "Perro",
-            " Raza": "Bulldog francés",
+            "Raza": "Bulldog francés",
             "Edad": "1 año",
             "Lugar": "Burgos",
-            " img": "./img/bulldog-frances-blue.jpg"
+            "img": "./img/bulldog-frances-blue.jpg"
         },
         {
             "id": 5,
             "Name": "Linda",
-            " Especie": "Perro",
-            " Raza": "Setter-gordon",
-            " Edad": "3 año",
-            " Lugar": "Pontevedra",
-            " img": "./img/Setter-gordon.jpg"
+            "Especie": "Perro",
+            "Raza": "Setter-gordon",
+            "Edad": "3 año",
+            "Lugar": "Pontevedra",
+            "img": "./img/Setter-gordon.jpg"
         }
     ],
     "roedores": [

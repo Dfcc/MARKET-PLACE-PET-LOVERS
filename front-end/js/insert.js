@@ -53,12 +53,9 @@ document.addEventListener('DOMContentLoaded', function() {
        
        <div class="pet" id=pet-${pet.id}>
         <div id=pet-${pet.id}>
-       
-         
           <img src="${pet.img}" width="333" height="500">
-          <h2>${pet.Name}</h2>
-          <p>${pet.Raza}</p>
-                   
+          <h3>${pet.Name}</h3>
+          <h4>${pet.Edad}</h4>
           <a href="detail.html?${pet.Especie}${pet.id}">
           <button> Detalle</button></a>
          
