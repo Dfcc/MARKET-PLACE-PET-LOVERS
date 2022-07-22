@@ -6,13 +6,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="category.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@600&family=Beau+Rivage&family=Dongle:wght@700&family=Great+Vibes&family=Montserrat:wght@400;500;600;800&family=Teko&display=swap');
+    </style>
     <title>Document</title>
 </head>
 
 <body>
+    <header> 
+        <div class="header"> 
+            <!-- barra de menu animado --> 
+        <div class="logotipo"> 
+            <img src="img/patita2.png" class="logo"> 
+            <p class="p-logo">Lovely Pets</p> 
+        </div> 
+        <!-- <img class="lupa" src="lupa.png" alt=""> --> 
+        <div class="bars__menu"> 
+            <span class="line1__bars-menu"></span> 
+            <span class="line2__bars-menu"></span> 
+            <span class="line3__bars-menu"></span> 
+        </div> 
+        <!-- menu --> 
+        <nav> 
+            <div class="menu-menu"> 
+                <a class="item-menu" target="_blank" href="/front-end/index.html">
+                    <p><img src="img/casa.png" alt=""> Home</p></a> 
+                    <a class="item-menu" target="_blank" href="/front-end/donacion/donacion.html">
+                        <p><img src="img/promocion.png" alt="">DONACIONES</p></a> 
+                        <a class="item-menu" target="_blank" href="/front-end/normativa/normativa.html">
+                            <p><img src="img/archivo.png" alt="">Normativas</p></a> 
+            </div> 
+        </nav> 
+        </div> 
+    </header> 
+
     <div class="container">
         <div class="card-section" id="card-template"></div>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="js.js"></script>
 </body>
 <script src="./js/insert.js"></script>
 </html>

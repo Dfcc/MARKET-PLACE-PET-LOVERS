@@ -2,19 +2,19 @@
     "cats": [
         {
             "id": 1,
-            " Name": "Misifu",
-            " Especie": "Gato",
-            " Raza": "Persa",
-            "Edad": 3,
+            "Name": "Misifu",
+            "Especie": "Gato",
+            "Raza": "Persa",
+            "Edad": "3 años",
             "Lugar": "Madrid",
             "img": "./img/persa.jpg"
         },
         {
-            " id": 2,
-            " Name": "Flash",
+            "id": 2,
+            "Name": "Flash",
             "Especie": "Gato",
             "Raza": "Munchkin",
-            " Edad": 3,
+            "Edad": "4 meses",
             "Lugar": "Barcelona",
             "img": "./img/munchkin.jpg"
         },
@@ -23,27 +23,27 @@
             "Name": "Odin",
             "Especie": "Gato",
             "Raza": "Europeo",
-            " Edad": 3,
-            " Lugar": "Asturias",
-            " img": "./img/comun-europeo.jpg"
+            "Edad": "6 meses",
+            "Lugar": "Asturias",
+            "img": "./img/comun-europeo.jpg"
         },
         {
             "id": 4,
             "Name": "Max",
             "Especie": "Gato",
-            " Raza": "Siames",
-            " Edad": 3,
-            " Lugar": "Galicia",
+            "Raza": "Siames",
+            "Edad": "1 años",
+            "Lugar": "Galicia",
             "img": "./img/siamés-gris.jpg"
         },
         {
-            " id": 5,
+            "id": 5,
             "Name": "Coco",
             "Especie": "Gato",
             "Raza": "Sagrado de birmania",
-            " Edad": 3,
-            " Lugar": "Asturias",
-            " img": "./img/sagrado-de-birmania.jpg"
+            "Edad": "2 años",
+            "Lugar": "Asturias",
+            "img": "./img/sagrado-de-birmania.jpg"
         }
     ],
     "dogs": [
@@ -58,8 +58,8 @@
         },
         {
             "id": 2,
-            " Name": "Mico",
-            " Especie": "Perro",
+            "Name": "Mico",
+            "Especie": "Perro",
             "Raza": "Husky Siberiano",
             "Edad": "3 meses",
             "Lugar": "Madrid",
@@ -68,35 +68,35 @@
         {
             "id": 3,
             "Name": "Nina",
-            " Especie": "Perro",
-            " Raza": "Cotón de Tuléar",
+            "Especie": "Perro",
+            "Raza": "Coton de Tulear",
             "Edad": "5 meses",
             "Lugar": "Bilbao",
-            "img": "./img/coton-de-tulaar-bebe.jpg"
+            "img": "./img/coton-de-tulear.jpg"
         },
         {
             "id": 4,
             "Name": "Toby",
             "Especie": "Perro",
-            " Raza": "Bulldog francés",
+            "Raza": "Bulldog francés",
             "Edad": "1 año",
             "Lugar": "Burgos",
-            " img": "./img/bulldog-frances-blue.jpg"
+            "img": "./img/bulldog-frances-blue.jpg"
         },
         {
             "id": 5,
             "Name": "Linda",
-            " Especie": "Perro",
-            " Raza": "Setter-gordon",
-            " Edad": "3 año",
-            " Lugar": "Pontevedra",
-            " img": "./img/Setter-gordon.jpg"
+            "Especie": "Perro",
+            "Raza": "Setter-gordon",
+            "Edad": "3 año",
+            "Lugar": "Pontevedra",
+            "img": "./img/Setter-gordon.jpg"
         }
     ],
     "roedores": [
         {
             "id": 1,
-            "Nombre": "Coquito",
+            "Name": "Coquito",
             "Especie": "Hámster(Roedor)",
             "Raza": "Chino",
             "Edad": "6 meses",
@@ -105,7 +105,7 @@
         },
         {
             "id": 2,
-            "Nombre": "Galleta",
+            "Name": "Galleta",
             "Especie": "Cobaya(Roedor)",
             "Raza": "Sheltie",
             "Edad": "1 Año",
@@ -114,7 +114,7 @@
         },
         {
             "id": 3,
-            "Nombre": "Miel",
+            "Name": "Miel",
             "Especie": "Conejo(Roedor)",
             "Raza": "Toy",
             "Edad": "3 Años",
@@ -123,7 +123,7 @@
         },
         {
             "id": 4,
-            "Nombre": "Lollipop",
+            "Name": "Lollipop",
             "Especie": "Chinchilla(Roedor)",
             "Raza": "Blanca",
             "Edad": "2 Años",
@@ -132,7 +132,7 @@
         },
         {
             "id": 5,
-            "Nombre": "Pompón",
+            "Name": "Pompón",
             "Especie": "Conejo(Roedor)",
             "Raza": "conejo",
             "Edad": "2 Años",
