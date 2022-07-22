@@ -3,5 +3,5 @@
 install:
 node.js
 json-server
-<img src:"https://user-images.githubusercontent.com/104829298/180395434-9d3fd280-0ed3-42e3-a20a-d94fe7428661.png">
 
+![image](https://user-images.githubusercontent.com/104829298/180395948-43f60185-0001-492d-a2e1-583baea65313.png)
