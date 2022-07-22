@@ -133,7 +133,7 @@
     position: fixed;
     top: 0;
     z-index: 1500;
-
+    
 
 }
 .cont-lupa{
@@ -179,11 +179,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-   border:1px solid red;
+
     position: fixed;
     
-    /* top: 10px;
-    left: 15px; */
+    top: 19px;
+    left: 15px;
 }
 .logo{
     width: 30px;

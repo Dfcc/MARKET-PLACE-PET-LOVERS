@@ -6,9 +6,10 @@
              "Name": "Deimos",
              "Especie": "Gato",
              "Raza": "Europeo",
-             "Edad": 1,
+             "Edad": 2,
              "Lugar": "Asturias",
              "img": "./img/comun-europeo.jpg"
+           
          },
          {
              "id": 2,
@@ -54,7 +55,8 @@
                  "Raza": " Pug Carlino",
                  "Edad": "1 año",
                  "Lugar": "Sevilla",
-                 "img": "./img/dog1.jpg"
+                 "img": "./img/dog1.jpg",
+                 "w": "641161427"
              }, 
              {
                  "id": 2,
@@ -63,7 +65,8 @@
                  "Raza": "Husky Siberiano",
                  "Edad": "3 meses",
                  "Lugar": "Madrid",
-                 "img": "./img/dog2.jpg"
+                 "img": "./img/dog2.jpg",
+                 "w": "641161427"
              },
              {
                  "id": 3,

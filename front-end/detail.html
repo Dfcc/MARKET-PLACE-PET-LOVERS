@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style-detail.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+   
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@600&family=Dongle:wght@700&family=Great+Vibes&family=Montserrat:wght@400;500;600;800&display=swap');
         </style>
@@ -13,13 +13,14 @@
 </head>
 <body>
     
-    <header>
+    <header id="r">
         <div class="header">
+              
         <!-- barra de menu animado -->
             <div class="logotipo">
 
-                <img src="/front-end/img/patita2.png" class="logo">
-                <h1 class="l">LOVELY PETS</h1>
+                <img src="img/patita2.png" class="logo">
+                <!-- <h1 class="l">LOVELY PETS</h1> -->
             </div>
             <!-- <img class="lupa" src="lupa.png" alt=""> -->
             <div class="bars__menu">
@@ -31,39 +32,68 @@
             <!-- menu  -->
             <nav>
                 <div class="menu-menu">
-                    <a target="_blank" href="https://maikol2503.github.io/formulariojavascrip/"><p class="item-menu"></ion-icon>Anunciar</p></a>
-                    <a target="_blank" href="https://maikol2503.github.io/calculadora/"><p class="item-menu"></ion-icon>Item</p></a>
-                </div>
+                    <a class="item-menu" target="_blank" href="index.html"><p><img src="img/casa.png" alt=""> Home</p></a>
+                    <a class="item-menu" target="_blank" href=""><p><img src="img/promocion.png" alt="">Publicar Anuncio</p></a>
+                    <a class="item-menu" target="_blank" href=""><p><img src="img/archivo.png" alt="">Normativas</p></a>
+               </div>
             </nav>
         </div>
     </header> 
     <main>
+
+    <div class="container">
+        <div class="body">
         <section>
             <article  id="card-detail">
                 <div class="card" id="card-pet">
                     <output id="img-output" class="img-out"></output>
-                    <div class="card-body">
-                        <h1>Ficha técnica del animal</h1>
-                        <output id="petName">Nombre : </output></br>
-                        <output id="petType">Especie : </output></br>
-                        <output id="petRace">Raza : </output></br>
-                        <output id="petAge">Edad : </output></br>
-                        <output id="petPlace">Lugar : </output></br> 
-                    </div>
+                 
                 </div>
                 
             </article>
         </section>
-    <form>
-        <label for="name">👤</label>
-        <input type="text" id="name" placeholder=" Aquí su nombre"  ></br>
-        <label for="email">📧</label>
-        <input type="text" id="email" placeholder=" e-mail" ></br>
-        <label for="phone">📱</label>
-        <input type="text" id="phone" placeholder=" Teléfono">
+        <section class="datos">
+            <div class="card-body">
+                <h1>Ficha técnica del animal</h1>
+                <p class="p" id="petName">Nombre : </p></br>
+                <p class="p" id="petType">Especie : </p></br>
+                <p class="p" id="petRace">Raza : </p></br>
+                <p class="p" id="petAge">Edad : </p></br>
+                <p class="p p2" id="petPlace">Lugar : </op</br> 
+                <p id="petW">whatsapp: </p>
+                <div class="contactos">
+                    <img class="vol" src="img/correo.png" alt="">
+                    <img src="img/whatsapp.png" alt="">
+                </div>
+                </div>
+                <div class="bd"><button class="ad">Adoptar</button></div>
+        </section>
+        </div>
+    </div>
+
+     
+
+
+
+
+
+  
+
+    <div class="c-form">
+     <img class="volver" src="img/flecha-correcta.png" alt="">
+     <form class="form" action="https://formsubmit.co/mgarrido2503@gmail.com" method="post">
+        <p>Enseguida nos pondremos en contacto contigo</p>
+        <input class="input" type="text" id="name" name="nombre" placeholder=" Aquí su nombre"  ></br>
+        <input class="input" type="text" id="email" name="email" placeholder=" e-mail" ></br>
+        <input class="input" type="text" id="phone" name="telefono" placeholder=" Teléfono">
+        <textarea placeholder="Mensaje" class="textarea" name="" id="" cols="30" rows="10"></textarea>
+        <button class="enviar-formulario">Enviar</button>
     </form>
+</div>
+
+
     </main>
-    <footer>
+    <!-- <footer>
          <nav class="navbar bg-light">
         <div class="container color-container">
             <div class="contenedor-iconos">
@@ -85,7 +115,8 @@
 
         </div>
     </nav>
-    </footer>
+    </footer> -->
     <script  src="./js/script-detail.js"></script>
+    <!-- <script  src="js2.js"></script> -->
 </body>
 </html>
